@@ -6,14 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
-            color: chocolate;
+        html{
+            background-color: hsl(212, 45%, 89%);
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 350px;
+            background-color: white;
+            position: relative;
+            justify-content: center;
+            border-radius: 15px;
+        }
+        .QR{
+            display: flex;
+            width: 85%;
+            height: 50%;
+            background-color: blue;
+            position: absolute;
+            top: 13px;
+            left: 12px;
+            border-radius: 15px;
+        }
+        .img{
+            border-radius: 15px;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            z-index: 10;
+            position: absolute;
+            align-items: center;
+            height: 50px;
+            top: 190px;
+            left: 3.5px;
+            font-size: small;
+        }
+        p{
+           margin-top: .0005px; 
         }
     </style>
 </head>
 <body>
-    <div>
-        Hola Mundo!
+    <div class="container">
+        <div class="QR">
+            <img class="img" src="image-qr-code.png"\Proyecto1\image-qr-code.png"" alt="QR">
+        </div>
+        <div class="text">
+            <p>Improve your front-end</p>
+            <p>skills by building projects</p>
+            <p>Scan the QR code to visit Frontend</p>
+            <p>Mentor and take your coding skills to</p>
+            <p>the next level</p>
+        </div>
     </div>
 </body>
 </html>
