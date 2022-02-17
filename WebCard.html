@@ -6,14 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
-            color: chocolate;
+        html{
+            background-color: lightskyblue;
+            display: flex;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            width: 200px;
+            height: 350px;
+            background-color: white;
+            position: relative;
+            justify-content: center;
+            border-radius: 15px;
+        }
+        .QR{
+            display: flex;
+            width: 85%;
+            height: 50%;
+            background-color: blue;
+            position: absolute;
+            justify-content: center;
+            top: 13px;
+            border-radius: 15px;
+        }
+        .img{
+            border-radius: 15px;
+        }
+        .text{
+            display: block;
+            z-index: 10;
+            background-color: blueviolet;
+            height: 70px;
         }
     </style>
 </head>
 <body>
-    <div>
-        Hola Mundo!
+    <div class="container">
+        <div class="QR">
+            <img class="img" src="image-qr-code.png"\Proyecto1\image-qr-code.png"" alt="QR">
+        </div>
+        <div class="text">
+            <p>Improve your front-end</p>
+            <p>skills by building projects</p>
+        </div>
     </div>
 </body>
 </html>
