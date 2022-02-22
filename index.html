@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --Light-gray: hsl(212, 45%, 89%);
+            --Grayish-blue: hsl(220, 15%, 55%);
+            --Dark-blue: hsl(218, 44%, 22%);
+            --sm: 15px;
+            --lg: 25px;
+            --weight-sm: 400;
+            --weight-lg: 700;
+        }
+        body{
+            font-family:'Outfit', sans-serif;
+            margin: 0;
+            background: var(--Light-gray);
+        }
+        .card{
+            display: grid;
+            place-items: center;
+        }
+        .card-container{
+            background-color: var(--white);
+            width: 400px;
+            height: 580px;
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+            margin-top: 100px;
+            border-radius: 25px;
+        }
+        .qr-container img{
+            margin-top: 26px;
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        .text-container{
+            display: flex;
+            flex-direction: column;
+            place-items: center;
+        }
+        .title{
+            font-size: var(--lg);
+            font-weight: var(--weight-lg);
+            color: var(--Dark-blue);
+            margin-top: 20px;
+            margin-bottom: 22px;
+        }
+        .title p{
+            margin-top: 2px;
+            margin-bottom: 1px;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: var(--sm);
+            font-weight: var(--weight-sm);
+            color:var(--Grayish-blue);
+        }
+        .text p{
+            margin-top: 2px;
+            margin-bottom: 1px;
+        }
+        @media(max-width:400){
+            .card-container{
+                width: 300px;
+                height: 435px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-container">
+            <div class="qr-container">
+                <img src="./image-qr-code.png" alt="QR">
+            </div>
+            <div class="text-container">
+                <div class="title">
+                    <p>Improve your front-end</p>
+                    <p>skills by building projects</p>
+                </div>
+                <div class="text">
+                    <p>Scan the QR code to visit Frontend</p>
+                    <p>Mentor and take your coding skills to</p>
+                    <p>the next level</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
